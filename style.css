@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    background-image: linear-gradient(55deg, #5D459D, #D5B1F4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 35px ;
+    color: #5D459D ;
+}
+
+h3 {
+    color: coral; 
+    padding: 20px 10px;
+}
+
+p {
+    color: #5D459D ;
+}
+
+.list {
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-size: 55px;
+}
+
+.card {
+    color: white;
+    box-shadow: 20px 15px 30px 0px rgb(0 0 0 / 50%), inset 1px 2px 6px 0px rgb(255 255 255 / 58%);
+    background-color: #C3A0EC;
+    border-radius: 20px;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: stretch;
+}
+
+
+.leftCart {
+    padding: 20px;
+    flex: 40%;
+    text-align: left;
+}
+
+.leftCart form {
+    padding: 30px 0;
+}
+
+.leftCart form input{
+    letter-spacing: 1px;
+    color: #5D459D ;
+    font-size: 15px;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    
+}
+
+.leftCart form button {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: coral;
+    color: white;
+}
+
+.leftCart form button:hover {
+    background-color: #5D459D;
+}
+
+.leftCart form button:active {
+    background-color: #544480;
+    color: #d8d5d5;
+}
+
+.rightCart {
+    background-color: white;
+    overflow: auto;
+    padding: 20px 30px;
+    flex: 60%;
+    text-align: right;
+}
+
+.rightCart p {
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
+.rightCart h1 {
+    padding-right: 10px;
+}
+
+.listResult {
+    margin: 10px;
+    height: 45px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #544480;;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #00000057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.listResult:hover {
+    background-color: #d4b0f33b;
+}
+
+.check {
+    background-image: url("img/check-color.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    height: 100%;
+    flex: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.check:hover {
+    background-image: url("img/check-white.png");
+}
+
+.del {
+    background-image: url("img/trash-color.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    height: 100%;
+    flex: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.del:hover {
+    background-image: url("img/trash-white.png");
+}
+
+.valueLis {
+    color:coral ;
+    flex: 100%;
+
+}
+
+.check:hover{
+    background-color: coral;
+}
+
+.del:hover {
+    background-color: coral;
+}
+
+
+
+/* Sumber : https://www.malasngoding.com/cara-design-tampilan-scrollbar-dengan-css3/ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C3A0EC;
+    border-radius: 10px;  
+}
+
+
+@media (max-width:600px) {
+    *{
+        overflow: auto;
+    }
+    body {
+        height: auto;
+    }
+    .card {
+        width: 100%;
+        border-radius: 0px;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:810px) {
+    .card {
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+    }    
+}
