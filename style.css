@@ -8,6 +8,7 @@
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
     transition: .3s;
+    /* border: solid 1px black; */
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 main {
-    background-image: linear-gradient(55deg, #5D459D, #D5B1F4);
+    background-image: linear-gradient(55deg, #3b9469, #b0f2e4);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -26,7 +27,7 @@ main {
 
 h1 {
     font-size: 35px ;
-    color: #5D459D ;
+    color: #3b9469 ;
 }
 
 h3 {
@@ -35,7 +36,7 @@ h3 {
 }
 
 p {
-    color: #5D459D ;
+    color: #3b9469 ;
 }
 
 .list {
@@ -47,7 +48,7 @@ p {
 .card {
     color: white;
     box-shadow: 20px 15px 30px 0px rgb(0 0 0 / 50%), inset 1px 2px 6px 0px rgb(255 255 255 / 58%);
-    background-color: #C3A0EC;
+    background-color: #b0f2e4;
     border-radius: 20px;
     width: 800px;
     height: 500px;
@@ -63,14 +64,14 @@ p {
 }
 
 .leftCart form {
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
-.leftCart form input{
+.leftCart form input, textarea{
     letter-spacing: 1px;
-    color: #5D459D ;
+    color: #458164 ;
     font-size: 15px;
-    margin: 20px 0;
+    margin: 18px 0;
     padding: 10px;
     text-align: center;
     width: 100%;
@@ -78,6 +79,12 @@ p {
     outline: none;
     border: none;
     
+}
+
+textarea {
+    margin-top: 5px;
+    resize: none;zz
+    overflow: auto;
 }
 
 .leftCart form button {
@@ -93,7 +100,7 @@ p {
 }
 
 .leftCart form button:hover {
-    background-color: #5D459D;
+    background-color: #3b9469;
 }
 
 .leftCart form button:active {
@@ -124,7 +131,7 @@ p {
     padding-right: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #544480;;
+    color: #3b9469;;
     border-radius: 10px;
     box-shadow: 0px 0px 4px 0px #00000057;
     display: flex;
@@ -134,11 +141,10 @@ p {
 }
 
 .listResult:hover {
-    background-color: #d4b0f33b;
+    background-color: #b0f2e475;
 }
 
-.check {
-    background-image: url("img/check-color.png");
+.check, .del, .add {
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -149,44 +155,72 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
+    
 }
-
+.check {
+    background-image: url("img/check-color.png");
+}
 .check:hover {
     background-image: url("img/check-white.png");
+    background-color: coral;
+}
+
+.add {
+    background-image: url("img/plus-color.png");
+}
+.add:hover {
+    background-color: coral;
 }
 
 .del {
     background-image: url("img/trash-color.png");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    height: 100%;
-    flex: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
-
 .del:hover {
     background-image: url("img/trash-white.png");
+    background-color: coral;
 }
 
 .valueLis {
     color:coral ;
     flex: 100%;
-
 }
 
-.check:hover{
-    background-color: coral;
+.markCheck {
+    background-color: #b0f2e475;
+    text-decoration: line-through;
 }
 
-.del:hover {
-    background-color: coral;
+.markCheck div {
+    color: #3b9469;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -200,7 +234,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #C3A0EC;
+    background: #b0f2e4;
     border-radius: 10px;  
 }
 
